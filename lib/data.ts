@@ -105,3 +105,5 @@ export const skillsData = [
   "Django",
   "Framer Motion",
 ] as const;
+
+export const myEmail = "hello@olivijaguzelyte.com";
