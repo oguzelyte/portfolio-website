@@ -115,7 +115,7 @@ export const projectsData: ReadonlyArray<ProjectData> = [
   {
     title: "MyReads Project",
     description:
-      "application that reads books from a 3rd party API and allows you to pass them around between virtual shelves.",
+      "Application that reads books from a 3rd party API and allows you to pass them around between virtual shelves.",
     tags: ["React", "JavaScript", "Debounce", "Prop Types"],
     imageUrl: myReadsImg,
     githubUrl: "https://github.com/oguzelyte/nd0191-c1-myreads",
