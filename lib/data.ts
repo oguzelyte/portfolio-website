@@ -74,13 +74,13 @@ export const experiencesData = [
 interface ProjectData {
   title: string;
   description: string;
-  tags: string[];
+  tags: readonly string[];
   imageUrl: StaticImageData;
   githubUrl?: string;
   liveUrl?: string;
 }
 
-export const projectsData: ProjectData[] = [
+export const projectsData: ReadonlyArray<ProjectData> = [
   {
     title: "Rift Clothing Store",
     description:
