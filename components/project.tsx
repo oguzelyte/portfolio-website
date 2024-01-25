@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubUrl,
+  liveUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -34,22 +36,47 @@ export default function Project({
     >
       <section
         className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden
-   sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition group-even:pl-8 rounded-lg"
+   sm:pr-8 relative  hover:bg-gray-200 transition sm:group-even:pl-8 rounded-lg 
+   dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
         <div
           className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]
-     flex flex-col h-full group-even:ml-[18rem]"
+     flex flex-col h-full sm:group-even:ml-[18rem]"
         >
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+            {description}
+          </p>
+          <div className="flex align-center items-center gap-2 ">
+            {liveUrl && (
+              <a
+                className="uppercase m-w-[4rem] text-gray-700 text-sm	bg-white/70 border border-black/[0.1]
+                rounded-lg p-2 dark:bg-white/10 dark:text-white/80 my-3 sm:my-4"
+                href={liveUrl}
+                target="_blank"
+              >
+                demo
+              </a>
+            )}
+            {githubUrl && (
+              <a
+                className="uppercase m-w-[4rem] text-gray-700 text-sm	bg-white/70 border border-black/[0.1]
+                rounded-lg p-2 dark:bg-white/10 dark:text-white/80 my-3 sm:my-4"
+                href={githubUrl}
+                target="_blank"
+              >
+                source code
+              </a>
+            )}
+          </div>
           <ul
-            className="flex flex-wrap mt-4
+            className="flex flex-wrap pt-4
      gap-2 sm:mt-auto"
           >
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white
-           rounded-full"
+           rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}
@@ -62,7 +89,7 @@ export default function Project({
           src={imageUrl}
           quality="95"
           priority={true}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-10 -right-40 -bottom-[100px] w-[29rem] rounded-t-lg shadow-2xl
        group-even:right-[initial] group-even:-left-40
        group-hover:-translate-x-3
        group-hover:translate-y-3

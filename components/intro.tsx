@@ -62,14 +62,14 @@ export default function Intro() {
         <span className="font-bold">
           full-stack (React & WordPress) developer
         </span>{" "}
-        with <span className="font-bold">3 years</span> of experience. I enjoy
+        with <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row justify-center
-      items-center text-lg font-medium gap-2 px-4 "
+      items-center text-lg font-medium gap-4 px-4 mb-[40px] sm:mb-0"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -95,34 +95,37 @@ export default function Intro() {
           href="/Olivija-Guzelyte-CV.pdf"
           className="bg-white px-7 py-3
         flex items-center gap-2 rounded-full outline-none focus:scale-110
-        hover:scale-110 active:scale-105 transition group borderBlack"
+        hover:scale-110 active:scale-105 transition group borderBlack dark:bg-white/10"
           download={true}
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-
-        <a
-          href="https://www.linkedin.com/in/olivijaguzelyte/"
-          target="_blank"
-          className="bg-white px-4 text-gray-700
+        <div className="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/olivijaguzelyte/"
+            target="_blank"
+            className="bg-white px-4 text-gray-700
         flex items-center gap-2 rounded-full self-stretch
         outline-none focus:scale-[1.15]
-        hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack "
-        >
-          <BsLinkedin />
-        </a>
+        hover:scale-[1.15] hover:text-gray-950 w-[3.375rem] h-[3.375rem] justify-center active:scale-105 transition group borderBlack
+       dark:bg-white/10 dark:text-white/60"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          href="https://github.com/oguzelyte/"
-          target="_blank"
-          className="bg-white px-4 text-gray-700
+          <a
+            href="https://github.com/oguzelyte/"
+            target="_blank"
+            className="bg-white px-4 text-gray-700 
         flex items-center gap-2 rounded-full self-stretch
-        outline-none focus:scale-[1.15]
-        hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack"
-        >
-          <BsGithub />
-        </a>
+        outline-none w-[3.375rem] h-[3.375rem] justify-center focus:scale-[1.15]
+        hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack dark:bg-white/10
+        dark:text-white/60"
+          >
+            <BsGithub />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

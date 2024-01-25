@@ -19,26 +19,34 @@ export default function About() {
     >
       <SectionHeading> 🌟 About Me </SectionHeading>
       <p className="mb-8">
-        Hello! I’m a seasoned Fullstack Developer specializing in both WordPress
-        and React, with a passion for creating robust, scalable web solutions.
-        With hands-on experience in a dynamic Agile-Kanban environment, I have
-        honed my skills in balancing dual project backlogs, adapting priorities
-        to meet evolving needs. My primary focus has been on React-based
+        I’m a seasoned Fullstack Developer specializing in both WordPress and
+        React, with a passion for creating robust, scalable web solutions. With
+        hands-on experience in a dynamic Agile-Kanban environment, I have honed
+        my skills in balancing dual project backlogs, adapting priorities to
+        meet evolving needs. My primary focus has been on React-based
         development, leveraging the power of Next.js and Chakra UI to build
         intuitive components for startup websites.
       </p>
       <SectionHeading> 💡 Technical Proficiency</SectionHeading>
       <p className="mb-8">
-        React & Next.js: Crafting dynamic user interfaces for startup websites,
-        ensuring seamless user experiences. WordPress Development: Expert in
-        developing and maintaining over 30+ WordPress sites, from blogs to
-        e-commerce platforms. Proficient in custom theme and plugin development,
-        data management via Gutenberg and REST API, and site migration.
-        Cross-Technology Integration: Skilled in integrating a wide array of
-        third-party services and APIs, enhancing website functionality and user
-        engagement. DevOps and Testing: Utilizing Docker, Node.js, and Webpack
-        for a streamlined development and testing process. Proficient in GitLab
-        for version control and efficient deployment.
+        <strong>React & Next.js:</strong> Crafting dynamic user interfaces for
+        startup websites, ensuring seamless user experiences.
+      </p>
+      <p className="mb-8">
+        <strong> WordPress Development:</strong> Expert in developing and
+        maintaining over 30+ WordPress sites, from blogs to e-commerce
+        platforms. Proficient in custom theme and plugin development, data
+        management via Gutenberg and REST API, and site migration.
+      </p>
+      <p className="mb-8">
+        <strong>Cross-Technology Integration:</strong> Skilled in integrating a
+        wide array of third-party services and APIs, enhancing website
+        functionality and user engagement.
+      </p>
+      <p className="mb-8">
+        <strong>DevOps and Testing:</strong> Utilizing Docker, Node.js, and
+        Webpack for a streamlined development and testing process. Proficient in
+        GitLab for version control and efficient deployment.
       </p>
       <SectionHeading> 🎯 Career Aspiration</SectionHeading>
       <p className="mb-8">

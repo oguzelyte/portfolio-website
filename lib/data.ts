@@ -1,10 +1,13 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { MdWorkOutline } from "react-icons/md";
+import { PiCoffee } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import riftImg from "@/public/rift.png";
+import aiImg from "@/public/ai-site.png";
+import portfolioImg from "@/public/portfolio.png";
+import myReadsImg from "@/public/myreads.png";
+import { StaticImageData } from "next/image";
 
 export const links = [
   {
@@ -35,74 +38,107 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Fullstack Developer (React, WordPress)",
+    location: "Kilo Health, Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Specialize in React and WordPress development, focusing on creating React components using Next.js and Chakra UI for startup sites, while managing over 30 WordPress blogs and e-commerce sites with custom themes and plugins in an Agile-Kanban environment, ensuring timely, high-quality deliverables.",
+    icon: React.createElement(MdWorkOutline),
+    date: "2022 - present",
+  },
+  {
+    title: "Freelance Web Developer",
+    location: "Remote",
+    description:
+      "Craft tailored WordPress solutions, collaborating closely with clients to meet their unique needs, integrating APIs with platforms like Klaviyo and Transistor, enhancing user experience with JavaScript libraries, and customizing WooCommerce and child themes.",
+    icon: React.createElement(PiCoffee),
+    date: "2022 - present",
+  },
+  {
+    title: "WordPress First Line Technical Support",
+    location: "Incsub, Remote",
+    description:
+      "Supported award-winning WPMU DEV plugins and WordPress hosting. Provided real-time technical support through multiple live chats, resolving issues with custom PHP, CSS, and JavaScript code, leading to nearly 100% positive feedback and significant customer satisfaction, evidenced by strong Trustpilot reviews and customer loyalty in subscription renewals.",
+    icon: React.createElement(MdOutlineSupportAgent),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Newcastle University",
+    location: "Newcastle upon Tyne, UK",
+    description:
+      "Excelled in technical projects ranging from web development to server configuration. Achieved 87% for thesis project of a travel itinerary generator built using Ionic, Angular, and Typescript.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2016 - 2020",
   },
 ] as const;
 
-export const projectsData = [
+interface ProjectData {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  githubUrl?: string;
+  liveUrl?: string;
+}
+
+export const projectsData: ProjectData[] = [
   {
-    title: "CorpComment",
+    title: "Rift Clothing Store",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Modern, performance-oriented e-commerce platform for fashion enthusiasts. Features Firebase for user authentication and Stripe API for payment processing.",
+    tags: ["React", "Next.js", "Firebase", "Stripe API", "Tailwind"],
+    imageUrl: riftImg,
+    githubUrl: "https://github.com/oguzelyte/rift-clothing-store",
   },
   {
-    title: "rmtDev",
+    title: "Portfolio Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "My portfolio website built with Next.js and Tailwind. It's fully responsive and has a dark mode.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "Framer Motion",
+      "React Email",
+    ],
+    imageUrl: portfolioImg,
+    githubUrl: "https://github.com/oguzelyte/portfolio-website",
   },
   {
-    title: "Word Analytics",
+    title: "AI Post Generator",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Script that creates SEO optimized 3000+ word blog posts (content, images, featured image) using GPT 3.5 and uploads them to a WordPress site. Demo site's posts are all AI generated.",
+    tags: ["Node.js", "Open AI", "WP API", "Various Image APIS"],
+    liveUrl: "https://horsebackhaven.com/",
+    imageUrl: aiImg,
+  },
+  {
+    title: "MyReads Project",
+    description:
+      "application that reads books from a 3rd party API and allows you to pass them around between virtual shelves.",
+    tags: ["React", "JavaScript", "Debounce", "Prop Types"],
+    imageUrl: myReadsImg,
+    githubUrl: "https://github.com/oguzelyte/nd0191-c1-myreads",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
+  "SCSS",
+  "Chakra UI",
+  "Tailwind",
   "JavaScript",
   "TypeScript",
+  "jQuery",
+  "PHP",
+  "WordPress",
   "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Next.js",
+  "GitLab",
+  "Docker",
+  "Figma",
   "Framer Motion",
 ] as const;
 
