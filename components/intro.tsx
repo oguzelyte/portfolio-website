@@ -14,7 +14,7 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
-      className="mb-2 max-w-[50rem] text-center
+      className="mb-2 max-w-[45rem] text-center
     sm:mb-0 scroll-mt-[100rem]"
       id="home"
       ref={ref}
@@ -32,8 +32,9 @@ export default function Intro() {
           <Image
             alt="Olivija portrait"
             src="/olivija-portrait.jpeg"
-            fill={true}
             quality="95"
+            width={96}
+            height={96}
             priority={true}
             className="rounded-full border-[0.35rem] border-white object-cover shadow-xl"
           />
@@ -62,9 +63,8 @@ export default function Intro() {
         <span className="font-bold">
           full-stack (React & WordPress) developer
         </span>{" "}
-        with <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        with <span className="font-bold">2 years</span> of experience. My
+        current focus is <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div

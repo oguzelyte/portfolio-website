@@ -10,24 +10,56 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb[8rem]
       scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading> 🌟 About Me </SectionHeading>
+      <SectionHeading> About Me </SectionHeading>
       <p className="mb-8">
-        I’m a seasoned Fullstack Developer specializing in both WordPress and
-        React, with a passion for creating robust, scalable web solutions. With
-        hands-on experience in a dynamic Agile-Kanban environment, I have honed
-        my skills in balancing dual project backlogs, adapting priorities to
-        meet evolving needs. My primary focus has been on React-based
-        development, leveraging the power of Next.js and Chakra UI to build
-        intuitive components for startup websites.
+        It was back in 2013 when I had my baby steps in development. Stubborn as
+        I was, I insisted to attend programming classes at the SmartTech Academy
+        in Vilnius, Lithuania. There I lucked out on having some of the greatest
+        teachers who inspired me to push my limits and be proactive in life. And
+        so - a dream was born.
       </p>
-      <SectionHeading> 💡 Technical Proficiency</SectionHeading>
+      <p className="mb-8">
+        Fast-forward to today, and I've had the privilege to study Computer
+        Science abroad in{" "}
+        <a href="https://www.ncl.ac.uk/" className="underline" target="_blank">
+          one of the greatest universities in the world
+        </a>
+        , intern for IBM, work as a WordPress technical support for an{" "}
+        <a
+          href="https://wpmudev.com/about/"
+          className="underline"
+          target="_blank"
+        >
+          award-winning company
+        </a>
+        , and now, I'm a full-stack developer at{" "}
+        <a href="https://kilo.health/" className="underline" target="_blank">
+          {" "}
+          Kilo Health
+        </a>
+        , where I continue to push my limits and grow professionally.
+      </p>
+
+      <p className="mb-8">
+        In my free time, I dabble in various side projects, from building blog
+        post generators and React stores to creating consistent AI personas
+        using Stable Diffusion.
+      </p>
+
+      <p className="mb-8">
+        When I'm not at the computer, you can usually find me at the weight rack
+        at the gym, cuddling with my two dogs, grabbing a takeaway or watching
+        some new show at Netflix (currently it's Better Call Saul).
+      </p>
+
+      <SectionHeading> Technical Proficiency</SectionHeading>
       <p className="mb-8">
         <strong>React & Next.js:</strong> Crafting dynamic user interfaces for
         startup websites, ensuring seamless user experiences.
@@ -43,28 +75,10 @@ export default function About() {
         wide array of third-party services and APIs, enhancing website
         functionality and user engagement.
       </p>
-      <p className="mb-8">
+      <p>
         <strong>DevOps and Testing:</strong> Utilizing Docker, Node.js, and
         Webpack for a streamlined development and testing process. Proficient in
         GitLab for version control and efficient deployment.
-      </p>
-      <SectionHeading> 🎯 Career Aspiration</SectionHeading>
-      <p className="mb-8">
-        I am on a quest to continuously challenge myself, striving to become a
-        more proficient coder and problem solver. My goal is to contribute to
-        high-quality, scalable, and innovative web solutions. I am eager to
-        leverage my experience in React and Next.js development to create
-        functional, clean, and efficient code. Joining a team that values
-        creativity, excellence, and continuous learning is where I see my skills
-        and passion aligning.
-      </p>
-      <SectionHeading> 🔍 Looking Forward</SectionHeading>
-      <p className="mb-3">
-        I'm excited to explore opportunities where I can contribute my expertise
-        in React and WordPress development while growing as a developer. I am
-        particularly interested in projects that push the limits of what's
-        possible on the web, allowing me to grow my skills further and make
-        significant contributions to the tech community.
       </p>
     </motion.section>
   );
