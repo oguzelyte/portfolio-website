@@ -42,12 +42,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Fullstack Developer (React, WordPress)",
-    location: "Kilo Health, Remote",
+    title: "Fullstack Developer",
+    location: "Voodoochilli, Remote",
     description:
-      "Focusing on React and WordPress development. Creating React components using Next.js and Chakra UI for startup sites. Managing over 30 WordPress blogs and e-commerce sites in an Agile-Kanban environment, ensuring timely, high-quality deliverables.",
+      "Delivered a £35k+ website project in 1.5 months, developed a Laravel CRM for user management and mass emailing, built 7+ bespoke WordPress sites in under 30 hours, and managed IT operations, support, optimization, and mentoring.",
     icon: React.createElement(MdWorkOutline),
-    date: "2022 - present",
+    date: "2024 - present",
   },
   {
     title: "Freelance Web Developer",
@@ -56,6 +56,14 @@ export const experiencesData = [
       "Crafting tailored WordPress solutions. Collaborating closely with clients to meet their unique needs. Integrating APIs with platforms like Klaviyo and Transistor. Enhancing user experience with JavaScript libraries, and customizing WooCommerce and child themes.",
     icon: React.createElement(PiCoffee),
     date: "2022 - present",
+  },
+  {
+    title: "Fullstack Developer (React, WordPress)",
+    location: "Kilo Health, Remote",
+    description:
+      "Focusing on React and WordPress development. Creating React components using Next.js and Chakra UI for startup sites. Managing over 30 WordPress blogs and e-commerce sites in an Agile-Kanban environment, ensuring timely, high-quality deliverables.",
+    icon: React.createElement(MdWorkOutline),
+    date: "2022 - 2024",
   },
   {
     title: "WordPress First Line Technical Support",
@@ -76,6 +84,24 @@ export const experiencesData = [
 ] as const;
 
 export const sitesLogosData = [
+  {
+    projectTitle: "franchise info",
+    url: "https://www.franchiseinfo.co.uk/",
+    imageUrl: "logos/franchise-info-logo.svg",
+    imageUrlDark: "logos/franchise-info-logo-dark.svg",
+  },
+  {
+    projectTitle: "nisos yacht charter",
+    url: "https://www.nisosyachtcharter.com/",
+    imageUrl: "logos/nisos-logo.webp",
+    imageUrlDark: "logos/nisos-logo.webp",
+  },
+  {
+    projectTitle: "sash resotoration",
+    url: "https://www.sash-restoration.co.uk/",
+    imageUrl: "logos/sash-logo.png",
+    imageUrlDark: "logos/sash-logo.png",
+  },
   {
     projectTitle: "kilo health b2b",
     url: "https://business.kilo.health/",
@@ -216,4 +242,4 @@ export const skillsData = [
   "Framer Motion",
 ] as const;
 
-export const myEmail = "hello@olivijaguzelyte.com";
+export const myEmail = "o.guzelyte@gmail.com";

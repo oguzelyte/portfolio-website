@@ -38,11 +38,16 @@ export default function About() {
           target="_blank"
         >
           award-winning company
-        </a>
-        , and now, I'm a full-stack developer at{" "}
-        <a href="https://kilo.health/" className="underline" target="_blank">
+        </a>,
+        lead WordPress development for one of the
+        <a href="https://kilo.health" className="underline" target="_blank">
           {" "}
-          Kilo Health
+          fastest growing European startups
+        </a>.
+        And now, I'm a full-stack developer at{" "}
+        <a href="https://www.voodoochilli.com" className="underline" target="_blank">
+          {" "}
+          Voodoochilli
         </a>
         , where I continue to push my limits and grow professionally.
       </p>
@@ -56,7 +61,7 @@ export default function About() {
       <p className="mb-8">
         When I'm not at the computer, you can usually find me at the weight rack
         at the gym, cuddling with my two dogs, grabbing a takeaway or watching
-        some new show at Netflix (currently it's Better Call Saul).
+        some new show at Netflix (currently it's Squid Game).
       </p>
 
       <SectionHeading> Technical Proficiency</SectionHeading>
